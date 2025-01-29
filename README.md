@@ -13,7 +13,7 @@ Este programa em C realiza a contagem de palavras em um arquivo de texto e exibe
 
 O projeto é composto por três arquivos principais:
 
-- `main.c`: Arquivo principal, responsável por ler o arquivo de entrada, processar as palavras e imprimir o resultado.
+- `contarPalavras.c`: Arquivo principal, responsável por ler o arquivo de entrada, processar as palavras e imprimir o resultado.
 - `lista.h` e `listaEncadeada.h`: Definem as funções e a estrutura de dados utilizada para armazenar as palavras e suas ocorrências.
 - `listaEncadeada.c`: Implementa as funções que manipulam as listas encadeadas.
 
@@ -58,11 +58,11 @@ Certifique-se de ter o compilador GCC instalado em seu sistema. Caso não tenha,
 
 Ao rodar o programa, a saída será algo como:
 ```bash
-Palavra "escuridão" 23 -> 1 
-Palavra "tempos" 23 -> 1 
-Palavra "amizade" 23 -> 1 
-Palavra "buscar" 23 -> 1 
-Palavra "outros" 23 -> 1 ...
+Palavra "escuridão" 23 | 1 -> 5 | 2 -> 
+Palavra "tempos" 23 | 1  ->
+Palavra "amizade" 23 | 1 -> 4 | 6 -> 
+Palavra "buscar" 23 | 1 -> 
+Palavra "outros" 23 | 1 -> ...
 ```
 
 Cada linha exibe a palavra, seguida pela linha onde ela foi encontrada e a quantidade de vezes que apareceu naquela linha.
